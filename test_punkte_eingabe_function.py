@@ -8,7 +8,7 @@ def test_punkte_eingabe_function__maximale_punktzahl():
     ist_ergebnis = punkte_eingabe_function(punkte / gesamtpunkte * 100);
     # Assert
     assert ist_ergebnis == soll_ergebnnis;
-def test_prozent_function__falsche_datentyp():
+def test_prozent_function__gar_keine_punkte():
     # Arrange
     punkte = 0;
     gesamtpunkte = 100;
@@ -17,7 +17,7 @@ def test_prozent_function__falsche_datentyp():
     ist_ergebnis = punkte_eingabe_function(punkte / gesamtpunkte * 100);
     # Assert
     assert ist_ergebnis == soll_ergebnnis;
-def test_prozent_function__falsche_datentyp():
+def test_prozent_function__untere_grenze():
 
     # Arrange
     punkte = -1;
@@ -27,7 +27,7 @@ def test_prozent_function__falsche_datentyp():
     ist_ergebnis = punkte_eingabe_function(punkte / gesamtpunkte * 100);
     # Assert
     assert ist_ergebnis == soll_ergebnnis;
-def test_prozent_function__falsche_datentyp():
+def test_prozent_function__obere_grenze():
 
     # Arrange
     punkte = 101;
@@ -37,7 +37,7 @@ def test_prozent_function__falsche_datentyp():
     ist_ergebnis = punkte_eingabe_function(punkte / gesamtpunkte * 100);
     # Assert
     assert ist_ergebnis == soll_ergebnnis;
-def test_prozent_function__falsche_datentyp():
+def test_prozent_function__falsche_datentyp_bei_punkten():
 
     # Arrange
     punkte = '50';
@@ -47,7 +47,7 @@ def test_prozent_function__falsche_datentyp():
     ist_ergebnis = punkte_eingabe_function(punkte / gesamtpunkte * 100);
     # Assert
     assert ist_ergebnis == soll_ergebnnis;
-def test_prozent_function__falsche_datentyp():
+def test_prozent_function__falsche_datentyp_bei_gesamt_punkten():
     # Arrange
     punkte = 100;
     gesamtpunkte = '100';
